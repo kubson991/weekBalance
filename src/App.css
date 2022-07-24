@@ -1,0 +1,150 @@
+
+
+.App{
+  background-color: var(--Cream);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+header{
+  background-color: var(--Softred);
+  width: 90%;
+  border-radius: 1rem;
+  height: 11rem;
+  margin-top: 7rem;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-left: 2rem;
+  color: var(--Verypaleorange);
+}
+
+header .content h3{
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+header .content .inputBalance{
+  display: flex;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+header .content .inputBalance input{
+  background-color: transparent;
+  outline: none;
+  border: unset;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--Verypaleorange);
+  max-width: 20.5rem;
+}
+.inputBalance input::-webkit-outer-spin-button,
+.inputBalance input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputBalance input[type=number] {
+  -moz-appearance: textfield;
+}
+
+header img{
+  width: 6rem;
+  height: 6rem;
+  margin-right: 3rem;
+  cursor:pointer ;
+}
+
+main{
+  background-color: var( --Verypaleorange);
+  border-radius: 1rem;
+  width: 90%;
+  height: 65%;
+  margin-top: 2rem;
+  max-width: 65rem;
+  max-height: 53rem;
+}
+
+main .spending{
+  padding: 1.5rem;
+  font-size: 2.4rem;
+  color: var(--Darkbrown)
+}
+
+
+.bottomContent .content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 2rem;
+    color: var(--Mediumbrown);
+  
+}
+
+.bottomContent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.bottomContent:before{
+  content: "";
+  display: block;
+  height: 0.2rem;
+  width: 85%;
+  background-color: var(--Cream);
+  position: absolute;
+  top: -3.5rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.bottomContent h1{
+  color: var(--Darkbrown);
+  font-size: 3rem;
+  max-width: 16rem;
+}
+.bottomContent h3{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.bottomContent .secondContent{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+margin-right: 2.5rem;
+}
+.bottomContent .secondContent .percentaje{
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--Darkbrown)
+}
+.bottomContent .secondContent .percentajeTitle{
+  color: var(--Mediumbrown);
+  font-size: 1.5rem;
+}
+
+@media (min-width:1200px){
+  header{
+    margin-top: 12rem;
+  }
+}

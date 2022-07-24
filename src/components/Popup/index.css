@@ -1,0 +1,64 @@
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.305);
+}
+
+.popup {
+  width: 80vw;
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--Cyan);
+  margin: auto;
+  display: flex;
+  border-radius: 1rem;
+}
+
+.popup form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.popup form .inputSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup form .inputSection input {
+  width: 9rem;
+  border-radius: 2%;
+  border: unset;
+  outline: none;
+}
+
+.popup form .inputSection label {
+  color: var(--Verypaleorange);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+@media (min-width: 1200px) {
+  .popup {
+    width: 40%;
+  }
+  .popup input::-webkit-outer-spin-button,
+  .popup input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  .popup input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
